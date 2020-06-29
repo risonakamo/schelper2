@@ -7,7 +7,7 @@
     "homepage_url":"https://github.com/risonakamo/schelper2",
 
     "permissions":[
-
+        "tabs"
     ],
 
     "browser_action":{
