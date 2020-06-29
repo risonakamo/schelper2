@@ -1,6 +1,9 @@
 {
   "name": "schelper2",
   "version": "2.0.0",
+  "scripts": {
+    "watch":"webpack --watch"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
