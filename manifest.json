@@ -1,0 +1,16 @@
+{
+    "manifest_version":2,
+    "name":"SC Helper 2",
+    "short_name":"schelper2",
+    "description":"SC Script Executor",
+    "version":"2.0.0",
+    "homepage_url":"https://github.com/risonakamo/schelper2",
+
+    "permissions":[
+
+    ],
+
+    "browser_action":{
+        "default_popup":"popup/popup.html"
+    }
+}
