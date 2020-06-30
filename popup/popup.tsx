@@ -31,6 +31,11 @@ class PopupMain extends React.Component
   // create executor links groups from current active configs
   createExecutors():ExecutorLinkGroup[]
   {
+    if (!this.state.activeConfigs.length)
+    {
+      return <p>No actions available.</p>;
+    }
+
     var groupedConfigs:GroupedExecuteConfigs=_.groupBy(this.state.activeConfigs,
       (x:ScriptExecutionConfiguration)=>{
       return x.category;
