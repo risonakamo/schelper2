@@ -21,6 +21,13 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         multiTarget:true,
         category:"EX Actions",
         tabresultHandler:"openNewTabs"
+    },
+    {
+        displayText:"Download full-size source All",
+        script:"exopenfull",
+        targetUrl:"https://exhentai.org/s/*",
+        multiTarget:true,
+        category:"EX Actions"
     }
 ];
 
