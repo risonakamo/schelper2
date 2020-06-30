@@ -1,5 +1,5 @@
 import executeConfig from "./executeconfig";
-import ExecutorLink from "./components/executorlink/executorlink";
+import {ExecutorLinkGroup} from "./components/executorlink/executorlink";
 
 import "./popup.less";
 
@@ -28,12 +28,21 @@ class PopupMain extends React.Component
     });
   }
 
-  // create executor links from current active configs
-  createExecutors():ExecutorLink[]
+  // create executor links groups from current active configs
+  createExecutors():ExecutorLinkGroup[]
   {
-    return _.map(this.state.activeConfigs,(x:ScriptExecutionConfiguration,
-      i:number)=>{
-      return <ExecutorLink config={x} key={i}/>;
+    var groupedConfigs:GroupedExecuteConfigs=_.groupBy(this.state.activeConfigs,
+      (x:ScriptExecutionConfiguration)=>{
+      return x.category;
+    });
+
+    return _.map(groupedConfigs,(x:ScriptExecutionConfiguration[],i:string)=>{
+      if (i=="undefined")
+      {
+        i="Uncategorised";
+      }
+
+      return <ExecutorLinkGroup configs={x} category={i} key={i}/>;
     });
   }
 

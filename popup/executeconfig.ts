@@ -1,13 +1,15 @@
 const executeConfig:ScriptExecutionConfiguration[]=[
     {
-        displayText:"Open source in all",
+        displayText:"Open source images All",
         script:"openoriginal",
-        targetUrl:"https://keep.google.com/*",
+        targetUrl:"https://chan.sankakucomplex.com/post/*",
+        multiTarget:true,
+        category:"Sankaku Actions"
     },
     {
-        displayText:"test2",
-        script:"adasd",
-        targetUrl:"https://developer.chrome.com/*",
+        displayText:"Fit to page All",
+        script:"openoriginal",
+        targetUrl:"https://chan.sankakucomplex.com/post/*",
         multiTarget:true
     }
 ];
