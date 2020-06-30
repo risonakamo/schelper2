@@ -23,7 +23,7 @@ async function determineValidScripts(configs:ScriptExecutionConfiguration[])
   // valid or not.
   var validConfigs:boolean[]=await Promise.all(_.map(configs,(x:
     ScriptExecutionConfiguration)=>{
-    return validateUrlCurrentTab(x);
+    return validateUrl(x);
   }));
 
   return _.filter(configs,(x:ScriptExecutionConfiguration,i:number)=>{
@@ -31,13 +31,13 @@ async function determineValidScripts(configs:ScriptExecutionConfiguration[])
   });
 }
 
-// return if an executor config is applicable for the current tab
-async function validateUrlCurrentTab(config:ScriptExecutionConfiguration)
+// return if an executor config is applicable to at least one tab
+async function validateUrl(config:ScriptExecutionConfiguration)
   :Promise<boolean>
 {
   return new Promise((resolve)=>{
     chrome.tabs.query({
-      active:true,
+      active:!config.multiTarget,
       currentWindow:true,
       url:config.targetUrl
     },(tabs:Tab[])=>{
