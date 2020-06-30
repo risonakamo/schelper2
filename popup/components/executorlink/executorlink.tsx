@@ -25,7 +25,7 @@ export default class ExecutorLink extends React.Component
     e.preventDefault();
 
     chrome.tabs.query({
-      active:!this.props.config.multiTarget,
+      active:!this.props.config.multiTarget || null,
       currentWindow:true,
       url:this.props.config.targetUrl
     },async (tabs:Tab[])=>{

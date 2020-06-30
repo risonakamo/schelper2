@@ -85,7 +85,7 @@ async function validateUrl(config:ScriptExecutionConfiguration)
 {
   return new Promise((resolve)=>{
     chrome.tabs.query({
-      active:!config.multiTarget,
+      active:!config.multiTarget || undefined,
       currentWindow:true,
       url:config.targetUrl
     },(tabs:Tab[])=>{
