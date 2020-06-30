@@ -36,6 +36,7 @@ type DateString=string;
 interface Tab
 {
     url:string
+    id:number
 }
 
 // react's ref
