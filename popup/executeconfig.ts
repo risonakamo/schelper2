@@ -14,6 +14,7 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         multiTarget:true,
         category:"Sankaku Actions"
     },
+
     {
         displayText:"Open small source images All",
         script:"exopenallsmall",
@@ -28,6 +29,14 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         targetUrl:"https://exhentai.org/s/*",
         multiTarget:true,
         category:"EX Actions"
+    },
+
+    {
+        displayText:"Open small source",
+        script:"fanboxopenallsmall",
+        targetUrl:"https://*.fanbox.cc/posts/*",
+        category:"PX Fanbox Actions",
+        tabresultHandler:"openNewTabsFlatten"
     }
 ];
 

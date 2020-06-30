@@ -9,7 +9,8 @@
     "permissions":[
         "tabs",
         "https://chan.sankakucomplex.com/*",
-        "https://exhentai.org/*"
+        "https://exhentai.org/*",
+        "https://*.fanbox.cc/*"
     ],
 
     "browser_action":{
