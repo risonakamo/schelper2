@@ -13,6 +13,14 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         targetUrl:"https://chan.sankakucomplex.com/post/*",
         multiTarget:true,
         category:"Sankaku Actions"
+    },
+    {
+        displayText:"Open small source images All",
+        script:"exopenallsmall",
+        targetUrl:"https://exhentai.org/s/*",
+        multiTarget:true,
+        category:"EX Actions",
+        tabresultHandler:"openNewTabs"
     }
 ];
 

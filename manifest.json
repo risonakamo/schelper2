@@ -8,7 +8,8 @@
 
     "permissions":[
         "tabs",
-        "https://chan.sankakucomplex.com/*"
+        "https://chan.sankakucomplex.com/*",
+        "https://exhentai.org/*"
     ],
 
     "browser_action":{
