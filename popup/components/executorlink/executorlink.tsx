@@ -33,7 +33,10 @@ export default class ExecutorLink extends React.Component
         return executeTabScript(x,`/scripts/${this.props.config.script}.js`);
       }));
 
-      executeCallbacks[this.props.config.tabresultHandler](results);
+      if (this.props.config.tabresultHandler)
+      {
+        executeCallbacks[this.props.config.tabresultHandler](results);
+      }
     });
   }
 

@@ -13,5 +13,9 @@
 
     "browser_action":{
         "default_popup":"popup/popup.html"
-    }
+    },
+
+    "web_accessible_resources":[
+        "/scripts/fitwindowall-stage2.js"
+    ]
 }

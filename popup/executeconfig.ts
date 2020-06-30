@@ -9,7 +9,7 @@ const executeConfig:ScriptExecutionConfiguration[]=[
     },
     {
         displayText:"Fit to page All",
-        script:"openoriginal",
+        script:"fitwindowall",
         targetUrl:"https://chan.sankakucomplex.com/post/*",
         multiTarget:true,
         category:"Sankaku Actions"
