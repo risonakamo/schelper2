@@ -1,16 +1,44 @@
 import executeConfig from "./executeconfig";
+import ExecutorLink from "./components/executorlink/executorlink";
+
+interface PopupMainState
+{
+  activeConfigs:ScriptExecutionConfiguration[]
+}
 
 class PopupMain extends React.Component
 {
+  state:PopupMainState
+
+  constructor(props:any)
+  {
+    super(props);
+
+    this.state={
+      activeConfigs:[]
+    };
+  }
+
   async componentDidMount()
   {
-    console.log(await determineValidScripts(executeConfig));
+    this.setState({
+      activeConfigs:await determineValidScripts(executeConfig)
+    });
+  }
+
+  // create executor links from current active configs
+  createExecutors():ExecutorLink[]
+  {
+    return _.map(this.state.activeConfigs,(x:ScriptExecutionConfiguration,
+      i:number)=>{
+      return <ExecutorLink config={x} key={i}/>;
+    });
   }
 
   render()
   {
     return <div>
-      hey
+      {this.createExecutors()}
     </div>;
   }
 }
