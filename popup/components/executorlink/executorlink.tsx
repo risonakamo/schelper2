@@ -1,3 +1,5 @@
+import "./executorlink.less";
+
 interface ExecutorLinkProps
 {
   config:ScriptExecutionConfiguration
@@ -10,6 +12,8 @@ export default class ExecutorLink extends React.Component
 
   render()
   {
-    return <a href="">{this.props.config.displayText}</a>;
+    return <a href="" className="executor-link">
+      {this.props.config.displayText}
+    </a>;
   }
 }

@@ -1,6 +1,8 @@
 import executeConfig from "./executeconfig";
 import ExecutorLink from "./components/executorlink/executorlink";
 
+import "./popup.less";
+
 interface PopupMainState
 {
   activeConfigs:ScriptExecutionConfiguration[]
@@ -37,9 +39,13 @@ class PopupMain extends React.Component
 
   render()
   {
-    return <div>
-      {this.createExecutors()}
-    </div>;
+    return <>
+      <h1>SC Helper 2</h1>
+
+      <div className="links">
+        {this.createExecutors()}
+      </div>
+    </>;
   }
 }
 
