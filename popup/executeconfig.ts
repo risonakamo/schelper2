@@ -4,13 +4,15 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         script:"openoriginal",
         targetUrl:"https://chan.sankakucomplex.com/post/*",
         multiTarget:true,
-        category:"Sankaku Actions"
+        category:"Sankaku Actions",
+        tabresultHandler:"openNewTabs"
     },
     {
         displayText:"Fit to page All",
         script:"openoriginal",
         targetUrl:"https://chan.sankakucomplex.com/post/*",
-        multiTarget:true
+        multiTarget:true,
+        category:"Sankaku Actions"
     }
 ];
 

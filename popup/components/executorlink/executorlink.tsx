@@ -1,3 +1,5 @@
+import executeCallbacks from "../../executecallbacks";
+
 import "./executorlink.less";
 
 interface ExecutorLinkProps
@@ -31,7 +33,7 @@ export default class ExecutorLink extends React.Component
         return executeTabScript(x,`/scripts/${this.props.config.script}.js`);
       }));
 
-      console.log(results);
+      executeCallbacks[this.props.config.tabresultHandler](results);
     });
   }
 
