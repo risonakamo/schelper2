@@ -1,3 +1,4 @@
+// return link to source image on sankaku image page
 (()=>{
     //origina link is usually 3rd li
     var originalLinkLi=document.querySelector("#stats li:nth-of-type(3)");

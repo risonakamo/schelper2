@@ -1,3 +1,5 @@
+// return url to large image on ex image page, or open the image in the current
+// tab if there is not large version
 (()=>{
     var downloadLink=document.querySelector("#i7");
 
