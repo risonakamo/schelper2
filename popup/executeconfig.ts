@@ -1,4 +1,5 @@
 const executeConfig:ScriptExecutionConfiguration[]=[
+    // SANKAKU
     {
         displayText:"Open source images All",
         script:"openoriginal",
@@ -15,6 +16,7 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         category:"Sankaku Actions"
     },
 
+    // EXH
     {
         displayText:"Open small source images All",
         script:"exopenallsmall",
@@ -31,6 +33,7 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         category:"EX Actions"
     },
 
+    // PIXIV FANBOX
     {
         displayText:"Open small source",
         script:"fanboxopenallsmall",
@@ -39,6 +42,16 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         tabresultHandler:"openNewTabsFlatten"
     },
 
+    // PIXIV
+    {
+        displayText:"Open all album images",
+        script:"pixivopenall",
+        targetUrl:"https://www.pixiv.net/artworks/*",
+        category:"PX Actions",
+        tabresultHandler:"openNewTabsFlatten"
+    },
+
+    // IMGUR
     {
         displayText:"Link to igaviewer2",
         script:"igaviewerlink",
