@@ -37,6 +37,14 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         targetUrl:"https://*.fanbox.cc/posts/*",
         category:"PX Fanbox Actions",
         tabresultHandler:"openNewTabsFlatten"
+    },
+
+    {
+        displayText:"Link to igaviewer2",
+        script:"igaviewerlink",
+        targetUrl:"https://imgur.com/a/*",
+        category:"Imgur Actions",
+        tabresultHandler:"openNewTabs"
     }
 ];
 

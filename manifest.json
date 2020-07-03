@@ -10,7 +10,8 @@
         "tabs",
         "https://chan.sankakucomplex.com/*",
         "https://exhentai.org/*",
-        "https://*.fanbox.cc/*"
+        "https://*.fanbox.cc/*",
+        "https://imgur.com/*"
     ],
 
     "browser_action":{
