@@ -58,6 +58,15 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         targetUrl:"https://imgur.com/a/*",
         category:"Imgur Actions",
         tabresultHandler:"openNewTabs"
+    },
+
+    // FILE page
+    {
+        displayText:"Open all",
+        script:"openallfilepage",
+        targetUrl:"file:///*",
+        category:"File Page Actions",
+        tabresultHandler:"openNewTabsFlatten"
     }
 ];
 

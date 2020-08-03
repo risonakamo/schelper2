@@ -12,7 +12,8 @@
         "https://exhentai.org/*",
         "https://*.fanbox.cc/*",
         "https://www.pixiv.net/*",
-        "https://imgur.com/*"
+        "https://imgur.com/*",
+        "file:///*"
     ],
 
     "browser_action":{
