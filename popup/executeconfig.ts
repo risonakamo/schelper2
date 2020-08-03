@@ -67,6 +67,13 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         targetUrl:"file:///*",
         category:"File Page Actions",
         tabresultHandler:"openNewTabsFlatten"
+    },
+    {
+        displayText:"Pause and Loop all",
+        script:"pauseloopfile",
+        targetUrl:"file:///*",
+        multiTarget:true,
+        category:"File Page Actions"
     }
 ];
 

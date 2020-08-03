@@ -1,3 +1,5 @@
+// return array of file urls to files on the current file page, sorted
+// with natural sort
 (()=>{
     var result=Array.from(document.querySelectorAll("#tbody a")).map((x)=>{
         return x.href;
