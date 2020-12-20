@@ -1,6 +1,6 @@
 {
   "name": "schelper2",
-  "version": "2.1.1",
+  "version": "2.2.1",
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack"

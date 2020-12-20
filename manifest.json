@@ -3,7 +3,7 @@
     "name":"SC Helper 2",
     "short_name":"schelper2",
     "description":"SC Script Executor",
-    "version":"2.2.0",
+    "version":"2.2.1",
     "homepage_url":"https://github.com/risonakamo/schelper2",
 
     "permissions":[
