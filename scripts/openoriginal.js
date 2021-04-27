@@ -1,20 +1,11 @@
 // return link to source image on sankaku image page
 (()=>{
-    //origina link is usually 3rd li
-    var originalLinkLi=document.querySelector("#stats li:nth-of-type(3)");
+    var imageLink=document.querySelector("#image-link");
 
-    if (originalLinkLi.innerText.slice(0,8)=="Original")
+    if (imageLink.href)
     {
-        return originalLinkLi.firstElementChild.href;
+        return imageLink.href;
     }
 
-    //if its not
-    var allLis=document.querySelectorAll("#stats li");
-    for (var x=0,l=allLis.length;x<l;x++)
-    {
-        if (allLis[x].innerText.slice(0,8)=="Original")
-        {
-            return allLis[x].firstElementChild.href;
-        }
-    }
+    return imageLink.firstElementChild.src;
 })()
