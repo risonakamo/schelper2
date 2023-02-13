@@ -42,13 +42,6 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         tabresultHandler:"openNewTabsFlatten"
     },
     {
-        displayText:"Open small source",
-        script:"fanboxopenallsmall",
-        targetUrl:"https://*.fanbox.cc/*/posts/*",
-        category:"PX Fanbox Actions",
-        tabresultHandler:"openNewTabsFlatten"
-    },
-    {
         displayText:"Open full size",
         script:"fanbox-open-big",
         targetUrl:"https://*.fanbox.cc/posts/*",
