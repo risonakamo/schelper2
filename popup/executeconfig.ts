@@ -48,6 +48,13 @@ const executeConfig:ScriptExecutionConfiguration[]=[
         category:"PX Fanbox Actions",
         tabresultHandler:"openNewTabsFlatten"
     },
+    {
+        displayText:"Open full size",
+        script:"fanbox-open-big",
+        targetUrl:"https://*.fanbox.cc/posts/*",
+        category:"PX Fanbox Actions",
+        tabresultHandler:"openNewTabsFlatten"
+    },
 
     // PIXIV
     {
