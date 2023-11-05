@@ -3,7 +3,7 @@ const executeConfig:ScriptExecutionConfiguration[]=[
     {
         displayText:"Open source images All",
         script:"openoriginal",
-        targetUrl:"https://chan.sankakucomplex.com/post/*",
+        targetUrl:"https://chan.sankakucomplex.com/posts/*",
         multiTarget:true,
         category:"Sankaku Actions",
         tabresultHandler:"openNewTabs"
@@ -11,7 +11,7 @@ const executeConfig:ScriptExecutionConfiguration[]=[
     {
         displayText:"Fit to page All",
         script:"fitwindowall",
-        targetUrl:"https://chan.sankakucomplex.com/post/*",
+        targetUrl:"https://chan.sankakucomplex.com/posts/*",
         multiTarget:true,
         category:"Sankaku Actions"
     },

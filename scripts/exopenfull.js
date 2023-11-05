@@ -1,17 +1,15 @@
 // return url to large image on ex image page, or open the image in the current
 // tab if there is not large version
 (()=>{
-    var downloadLink=document.querySelector("#i7");
+    var downloadLinks=document.querySelectorAll("#i6 > div > a");
 
-    if (downloadLink.children.length)
+    if (downloadLinks.length)
     {
-        downloadLink=downloadLink.children[1].href;
+        window.location.href=downloadLinks[2];
     }
 
     else
     {
-        downloadLink=document.querySelector("#img").src;
+        console.error("could not find download link");
     }
-
-    window.location.href=downloadLink;
 })()

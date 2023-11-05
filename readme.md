@@ -5,3 +5,8 @@ provide script executors for certain sites
 1. in `executeconfig.ts`, add a configuration option for the new script. check the interface or other scripts for which options are available.
     - new execute callbacks should go in the `executecallbacks.ts` file. executor callbacks are called with the result, or results, of the chosen content script to execute.
 2. ensure the url being targetted is added to the manifest.
+
+# development setup
+1. `npm i`
+2. `npm run watch`
+3. add this folder to chrome as developer extension
